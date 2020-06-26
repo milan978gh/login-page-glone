@@ -49,8 +49,8 @@ h1,h2,h3,h4,h5,h6{
 #signin .logo{
     padding-bottom: 8vh;
 }
-#signin .logo img{
-    width: 300px;
+#signin .logo h1{
+    color: #ff8500;
 }
 #signin label{
     font-size: .9rem;
@@ -94,6 +94,17 @@ h1,h2,h3,h4,h5,h6{
 #signin .or span{
     color: #ccc;
     padding: 0 .8rem;
+}
+#main-footer{
+    color: #ccc;
+    text-align: center;
+    font-size: .8rem;
+    max-width: 80%;
+    padding-top: 5rem;
+}
+#main-footer a{
+    color: #ff8500;
+    text-decoration: underline;
 }
 
 /* button */

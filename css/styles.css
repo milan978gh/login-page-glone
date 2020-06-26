@@ -5,4 +5,111 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Tahoma, sans-serif;
+    font-weight: 400;
+    background: #181818;
+    color: #fff;
+    overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 400;
+}
+#wraper{
+    display: flex;
+    flex-direction: row;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#right{
+    flex: 1;
+}
+
+/* sign-in */
+#signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+#signin form{
+    width: 80%;
+    padding-bottom: 3rem;
+}
+#signin .logo{
+    padding-bottom: 8vh;
+}
+#signin .logo img{
+    width: 300px;
+}
+#signin label{
+    font-size: .9rem;
+    line-height: 2rem;
+}
+#signin .text-input{
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: .5rem 1rem;
+    line-height: 1.3rem;
+}
+#signin .primary-btn{
+    width: 100%;
+}
+
+
+/* button */
+.primary-btn{
+    display: block;
+    height: 2.5rem;
+    padding: .7rem 1rem;
+    border: 0;
+    border-radius: 5px;
+    background: #ff4500;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s;
+}
+.primary-btn:hover{
+    background-color: #ff8500;
+}
+.secondary-btn{
+    display: block;
+    height: 2.5rem;
+    padding: .7rem 1rem;
+    border: 1px solid #f4f4f4;
+    border-radius: 5px;
+    background: #none;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s;
+}
+.secondary-btn:hover{
+    border-color: #ff8500;
+    color: #ff8500;
+}
+
+/* @media */
+@media(min-width: 1200px){
+    #left{
+        flex: 4;
+    }
+    #right{
+        flex: 6;
+    }
 }

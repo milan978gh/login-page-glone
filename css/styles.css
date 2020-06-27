@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5,h6{
     padding-bottom: 3rem;
 }
 #signin .logo{
-    padding-bottom: 8vh;
+    margin-bottom: 8vh;
 }
 #signin .logo h1{
     color: #ff8500;
@@ -174,3 +174,24 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 
+@media(max-width:1200px){
+    body{
+        overflow: auto;
+    }
+    #right{
+        display: none;
+    }
+    #left{
+        justify-content: start;
+        margin-top: 4vh;
+    }
+    #signin .logo{
+        margin-bottom: 2vh;
+    }
+    #signin .text-input{
+        margin-bottom: .7rem;
+    }
+    #main-footer{
+        padding-top: 1rem;
+    }
+}
